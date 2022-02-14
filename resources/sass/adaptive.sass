@@ -1,0 +1,59 @@
+@media (max-width: 640px) and (min-width: 300px)
+    .header_adaptive
+        display: block
+        position: fixed
+        width: 100%
+        background-color: #001119
+    .header
+        display: none
+    .header_adaptive_logo
+        text-align: center
+        a
+            img
+                max-width: 80px
+                width: 100%
+    .header_adaptive_search
+            border-left: 3px solid #ff8800
+            height: 100%
+            margin: auto
+            max-width: 300px
+            form
+                input
+                    border: 1px solid #001119
+                    padding: 10px
+                    font-size: 14.5px
+                    background-color: #001119
+    .header_adaptive_nav
+        nav
+            display: flex
+            flex-direction: column
+            padding: 30px 0px
+            a
+                text-align: center
+                font-size: 18px
+                color: #fff
+                text-decoration: none
+                transition: .2s
+            a:hover
+                color: #ff8800
+                transition: .2s
+                font-size: 18.3px
+    .main_title
+        height: 550px
+        text-align: center
+        padding: 150px 0px 0px 0px
+        .main_title_item
+            padding-top: 50px
+            h1
+                color: #fff
+                font-size: 20px
+            p
+                color: #fff
+                font-size: 12px
+    .popular_prebuilt_cont
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 1fr 1fr 1fr
+    .our_products_cont
+        grid-template-columns: 1fr
+        grid-template-rows: 1fr 1fr 1fr
+

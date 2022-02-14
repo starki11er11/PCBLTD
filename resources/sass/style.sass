@@ -1,0 +1,882 @@
+@font-face
+  font-family: 'SansSerif'
+  src: url(../media/fonts/microsoftsansserif.ttf)
+
+*
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+body
+  font-family: 'SansSerif'
+
+.header_adaptive
+  display: none
+
+.header
+  max-width: 1920px
+  width: 100%
+  margin: 0px
+  position: fixed
+
+  .header_upper
+    padding: 10px
+    width: 100%
+    background-color: #001119
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-pack: justify
+    -ms-flex-pack: justify
+    justify-content: space-between
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+
+    .header_logo
+      padding: 0px 0px 0px 130px
+
+      img
+        max-width: 80px
+        width: 100%
+
+    .header_search
+      border-left: 3px solid #ff8800
+      height: 100%
+
+      form input
+        border: 1px solid #001119
+        padding: 10px
+        font-size: 17.5px
+        background-color: #001119
+
+    .header_inst_nav
+      padding: 15px
+
+      a
+        font-size: 18px
+        color: #fff
+        text-decoration: none
+        -webkit-transition: .2s
+        transition: .2s
+        border-left: 3px solid #001119
+
+        &:hover
+          border-left: 3px solid #ff8800
+          color: #ff8800
+          -webkit-transition: .2s
+          transition: .2s
+
+  .header_bottom
+    height: 50px
+    background-color: #061d2b
+
+    .header_bottom_nav
+      height: 50px
+      display: -webkit-box
+      display: -ms-flexbox
+      display: flex
+      -ms-flex-pack: distribute
+      justify-content: space-around
+      -webkit-box-align: center
+      -ms-flex-align: center
+      align-items: center
+
+      a
+        font-size: 18px
+        color: #fff
+        text-decoration: none
+        -webkit-transition: .2s
+        transition: .2s
+
+        &:hover
+          border-left: 3px solid #ff8800
+          color: #ff8800
+          -webkit-transition: .2s
+          transition: .2s
+          font-size: 18.3px
+
+.header_inst
+  display: -ms-grid
+  display: grid
+  -ms-grid-rows: 1fr
+  grid-template-rows: 1fr
+  -ms-grid-columns: 3fr 1fr
+  grid-template-columns: 3fr 1fr
+
+.main .main_title
+  height: 550px
+  background-image: url("../media/img/Servers22-11.png")
+  text-align: left
+  padding: 250px 0px 0px 150px
+
+  .main_title_item
+    h1
+      color: #fff
+      font-size: 70px
+
+    p
+      color: #fff
+      font-size: 42px
+
+.our_products
+  margin: 50px auto
+
+  h2
+    font-size: 40px
+    padding: 30px 0px 30px 150px
+
+  .our_products_cont
+    max-width: 1440px
+    width: 100%
+    display: -ms-grid
+    display: grid
+    -ms-grid-columns: 1fr 1fr 1fr
+    grid-template-columns: 1fr 1fr 1fr
+    -ms-grid-rows: 1fr
+    grid-template-rows: 1fr
+    text-align: center
+    margin: auto
+
+    .our_products_cont_item
+      max-width: 240px
+      width: 100%
+      margin: auto
+
+      .our_products_cont_item_img
+        max-width: 240px
+        text-align: center
+
+        img
+          width: 50%
+
+      .our_products_cont_item_text
+        h5
+          font-size: 15px
+
+        p
+          font-size: 13px
+
+  .our_products_more_btn
+    text-align: center
+    padding: 50px
+
+    a
+      font-size: 30px
+      color: #fff
+      background-color: #ff8800
+      text-decoration: none
+      font-weight: bold
+      padding: 10px 30px
+      text-align: center
+      -webkit-box-shadow: 3px 3px 3px #353333
+      box-shadow: 3px 3px 3px #353333
+      -webkit-transition: .3s
+      transition: .3s
+
+      &:hover
+        font-size: 30.5px
+        color: #ff8800
+        background-color: #fff
+        border: 3px solid #ff8800
+        -webkit-transition: .2s
+        transition: .2s
+
+.popular_prebuilt
+  margin: 50px auto
+
+  h2
+    font-size: 40px
+    padding: 30px 0px 30px 150px
+
+  .popular_prebuilt_cont
+    max-width: 1300px
+    display: -ms-grid
+    display: grid
+    -ms-grid-columns: 1fr 1fr 1fr
+    grid-template-columns: 1fr 1fr 1fr
+    -ms-grid-rows: 1fr
+    grid-template-rows: 1fr
+    text-align: center
+    margin: auto
+
+    .popular_prebuilt_cont_item
+      max-width: 240px
+      width: 100%
+      margin: auto
+
+      .popular_prebuilt_cont_item_img
+        max-width: 240px
+        text-align: center
+
+        img
+          width: 50%
+
+      .popular_prebuilt_cont_item_text
+        h5
+          font-size: 15px
+
+        p
+          font-size: 13px
+
+  .popular_prebuilt_more_btn
+    text-align: center
+    padding: 50px
+
+    a
+      font-size: 30px
+      color: #fff
+      background-color: #001119
+      text-decoration: none
+      font-weight: bold
+      padding: 10px 30px
+      text-align: center
+      -webkit-box-shadow: 3px 3px 3px #353333
+      box-shadow: 3px 3px 3px #353333
+      -webkit-transition: .3s
+      transition: .3s
+
+      &:hover
+        font-size: 30.5px
+        color: #001119
+        background-color: #fff
+        border: 3px solid #001119
+        -webkit-transition: .2s
+        transition: .2s
+
+.more_info
+  background-color: #001119
+  padding: 40px
+
+  h2
+    font-size: 40px
+    color: #fff
+    padding: 30px 0px 30px 150px
+
+  .more_info_cont
+    display: -ms-grid
+    display: grid
+    -ms-grid-columns: 1fr 1.5fr 1fr
+    grid-template-columns: 1fr 1.5fr 1fr
+    -ms-grid-rows: 1fr
+    grid-template-rows: 1fr
+    text-align: center
+    margin: auto
+
+    .more_info_item
+      color: #fff
+
+      h4
+        font-size: 18px
+        padding: 5px
+
+      ul
+        list-style-type: none
+
+        li
+          padding: 10px
+
+          a
+            color: #fff
+            text-decoration: none
+            font-size: 15px
+            padding: 5px
+            -webkit-transition: .2s
+            transition: .2s
+
+            &:hover
+              color: #ff8800
+              border-left: 3px solid #ff8800
+              -webkit-transition: .2s
+              transition: .2s
+
+.footer
+  background-color: #001119
+  max-width: 1920px
+  width: 100%
+  padding-top: 15px
+
+  .footer_upper
+    max-width: 1200px
+    margin: auto
+    display: -ms-grid
+    display: grid
+    -ms-grid-columns: 1fr 2fr 1fr
+    grid-template-columns: 1fr 2fr 1fr
+    -ms-grid-rows: 1fr
+    grid-template-rows: 1fr
+
+    .footer_upper_nav
+      text-align: center
+
+      ul
+        list-style-type: none
+
+        li a
+          text-decoration: none
+          color: #fff
+          font-size: 18px
+
+          &:hover
+            color: #ff8800
+            font-size: 18.5px
+
+    .footer_upper_logo
+      margin: auto
+
+      img
+        max-width: 80px
+        width: 100%
+
+  .footer_bottom
+    margin-top: 40px
+
+    .footer_bottom_social_sector
+      display: -webkit-box
+      display: -ms-flexbox
+      display: flex
+      -ms-flex-wrap: wrap
+      flex-wrap: wrap
+      gap: 10px
+      margin: auto
+      max-width: 200px
+      width: 100%
+      padding-bottom: 10px
+
+      a img
+        max-width: 40px
+        width: 100%
+
+    .footer_bottom_copyright
+      max-width: 500px
+      margin: auto
+
+      p
+        text-align: center
+        border-top: 3px solid #ff8800
+        color: #fff
+        font-weight: bold
+        padding: 10px
+
+.calc_cont
+  padding-top: 150px
+  max-width: 1920px
+  width: 100%
+  background-color: #0a2b41
+
+  h2
+    font-size: 40px
+    color: #fff
+    padding: 15px 0px 15px 150px
+
+  .cacl_cont_navbar nav
+    padding: 10px
+
+    a
+      color: #fff
+      font-size: 18px
+      text-decoration: none
+      -webkit-transition: .3s
+      transition: .3s
+
+      &:hover
+        font-size: 18.5px
+        color: #ff8800
+        -webkit-transition: .3s
+        transition: .3s
+
+.cacl_cont_main .calc_cont_main_nav
+  max-width: 1920px
+  width: 100%
+  padding: 15px
+  background-color: #061d2b
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  gap: 10px
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
+  margin: 30px 0px
+
+  a
+    color: #fff
+    font-size: 19px
+    text-decoration: none
+    border: 1.5px solid #061d2b
+    padding: 5px 15px
+    border-radius: 15px
+    -webkit-transition: .3s
+    transition: .3s
+    -webkit-box-shadow: 3px 3px 3px #000000
+    box-shadow: 3px 3px 3px #000000
+    background-color: #082335
+
+    &:hover
+      color: #ff8800
+      border: 1px solid #ff8800
+      -webkit-transition: .3s
+      transition: .3s
+
+.cacl_cont_main_contaner
+  display: -ms-grid
+  display: grid
+  -ms-grid-columns: 1fr 0.5fr
+  grid-template-columns: 1fr 0.5fr
+
+.cacl_cont_main_calcfield_item
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  max-width: 800px
+  width: 100%
+  -webkit-box-pack: justify
+  -ms-flex-pack: justify
+  justify-content: space-between
+  margin: 15px 10px
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+
+  p
+    font-size: 25px
+    color: #fff
+    cursor: pointer
+
+  img
+    max-width: 35px
+    width: 100%
+
+.cacl_cont_main_calcfield_child h3
+  font-size: 26px
+  color: #fff
+  padding: 15px 0px 15px 150px
+
+.cacl_cont_main_calcfield_child_item
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  max-width: 800px
+  width: 100%
+  -webkit-box-pack: justify
+  -ms-flex-pack: justify
+  justify-content: space-between
+  margin: 15px 10px
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+
+  p
+    font-size: 25px
+    color: #fff
+    cursor: pointer
+
+  img
+    max-width: 35px
+    width: 100%
+
+.cacl_cont_main_stat
+  h3
+    font-size: 26px
+    color: #fff
+
+  p
+    font-size: 18px
+    color: #fff
+
+  .cacl_cont_main_stat_saveblock
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+
+    a
+      color: #fff
+      font-size: 19px
+      text-decoration: none
+      border: 1.5px solid #061d2b
+      padding: 5px 15px
+      border-radius: 15px
+      -webkit-transition: .3s
+      transition: .3s
+      -webkit-box-shadow: 3px 3px 3px #000000
+      box-shadow: 3px 3px 3px #000000
+      background-color: #082335
+
+      &:hover
+        color: #ff8800
+        border: 1px solid #ff8800
+        -webkit-transition: .3s
+        transition: .3s
+
+.about_main
+  background-image: url("../media/img/bc1.png")
+  background-size: cover
+
+.about_main_cont
+  max-width: 1920px
+  width: 100%
+  margin: auto
+  padding: 190px 0px 0px 0px
+
+.about_main_cont_info
+  h1
+    font-size: 50px
+    padding-left: 130px
+
+  h2
+    font-size: 30px
+    padding-left: 130px
+
+.about_main_cont_info_t1_item
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  -webkit-box-pack: justify
+  -ms-flex-pack: justify
+  justify-content: space-between
+  padding: 10px 130px
+
+  p
+    font-size: 29px
+    font-weight: bold
+    width: 99%
+    padding: 30px 0px
+    text-align: justify
+    color: #000
+
+    em
+      color: #061d2b
+      cursor: pointer
+      -webkit-transition: .5s
+      transition: .5s
+
+      &:hover
+        color: red
+        -webkit-transition: .5s
+        transition: .5s
+
+  img
+    max-width: 500px
+    max-height: 500px
+    width: 100%
+    height: 100%
+    -webkit-transition: .3s
+    transition: .3s
+    padding: 40px 30px
+
+    &:hover
+      max-width: 501px
+      max-height: 501px
+      padding: 35px 25px
+      -webkit-transition: .3s
+      transition: .3s
+
+.about_main_cont_info_t2
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+
+  p
+    padding: 3px 130px
+    font-size: 18px
+
+.about_main_cont_info_t2_map iframe
+  width: 850px
+  height: 450px
+
+.about_main_cont_info_t4
+  padding: 30px 0px
+
+.about_main_cont_info_t3
+  padding: 30px 0px
+
+  p
+    padding: 3px 130px
+    font-size: 18px
+
+.about_main_cont_info_t4
+  display: -ms-grid
+  display: grid
+  max-width: 1600px
+  width: 100%
+  margin: 0 auto
+  -ms-grid-columns: 1fr 1fr 1fr
+  grid-template-columns: 1fr 1fr 1fr
+  -ms-grid-rows: 1fr 1fr 1fr
+  grid-template-rows: 1fr 1fr 1fr
+  gap: 35px
+
+.about_main_cont_info_t4_item
+  padding: 10px 25px
+  border: 3px solid #ff8800
+  border-radius: 9px
+  max-width: 450px
+  width: 100%
+  -webkit-transition: .2s
+  transition: .2s
+  cursor: default
+
+  h4
+    font-size: 23px
+
+  p
+    font-size: 18px
+
+  &:hover
+    max-width: 460px
+    -webkit-transition: .2s
+    transition: .2s
+
+    h4
+      font-size: 24px
+      -webkit-transition: .2s
+      transition: .2s
+
+    p
+      font-size: 19px
+      -webkit-transition: .2s
+      transition: .2s
+
+.about_main_cont_info_t4_d1
+  max-width: 300px
+  width: 100%
+  margin: 30px auto
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-orient: vertical
+  -webkit-box-direction: normal
+  -ms-flex-direction: column
+  flex-direction: column
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  text-align: center
+
+  p
+    font-size: 28px
+    font-weight: bold
+    text-align: center
+
+  .about_main_cont_info_t4_d1_qstion
+    margin: 30px auto
+
+    p
+      font-size: 70px
+      max-width: 300px
+      max-height: 300px
+      display: table-cell
+      font-weight: bold
+      padding: 15px 30px
+      background-color: #061d2b
+      color: #fff
+      border-radius: 50%
+      cursor: pointer
+      -webkit-transition: .3s
+      transition: .3s
+
+      &:hover
+        background-color: #ff8800
+        -webkit-transition: .3s
+        transition: .3s
+        -webkit-transform: rotate(360deg)
+        transform: rotate(360deg)
+
+.main_login
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-pack: space-betweens
+  -ms-flex-pack: space-betweens
+  justify-content: space-betweens
+  max-width: 1920px
+  width: 100%
+  padding-top: 150px
+  background-color: #06203a
+
+.main_login_background
+  background-image: url("../media/img/Servers22.gif")
+  background-size: cover
+  max-width: 1100px
+  width: 100%
+  height: 900px
+
+.main_login_field
+  max-width: 800px
+  width: 100%
+
+  form
+    max-width: 350px
+    margin: auto
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
+    flex-direction: column
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+    -ms-flex-pack: distribute
+    justify-content: space-around
+    gap: 30px
+    padding: 200px 0px
+
+    .cont-91
+      border-left: 5px solid #ff8800
+
+      .field
+        font-size: 35px
+        padding: 10px
+        background-color: #06203a
+        border: 1px solid #06203a
+        color: #fff
+
+        &::-webkit-input-placeholder, &:-ms-input-placeholder, &::-ms-input-placeholder, &::placeholder
+          color: #a7a1a1
+
+    .request_form_btn
+      text-align: center
+      padding: 50px
+
+      input
+        font-size: 30px
+        color: #fff
+        background-color: #ff8800
+        text-decoration: none
+        font-weight: bold
+        padding: 10px 30px
+        text-align: center
+        -webkit-transition: .3s
+        transition: .3s
+
+        &:hover
+          font-size: 30.5px
+          color: #ff8800
+          background-color: #fff
+          -webkit-transition: .2s
+          transition: .2s
+
+  p
+    font-size: 18px
+    color: #fff
+    font-weight: bold
+
+  a
+    font-size: 18px
+    text-decoration: none
+    color: #fff
+    -webkit-transition: .2s
+    transition: .2s
+
+    &:hover
+      font-size: 18.2px
+      color: #ff8800
+      -webkit-transition: .2s
+      transition: .2s
+
+.main_reg
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-pack: space-betweens
+  -ms-flex-pack: space-betweens
+  justify-content: space-betweens
+  max-width: 1920px
+  width: 100%
+  padding-top: 150px
+  background-color: #06203a
+
+.main_reg_background
+  background-image: url("../media/img/Servers22.gif")
+  background-size: cover
+  max-width: 1100px
+  width: 100%
+  height: 900px
+
+.main_reg_field
+  max-width: 800px
+  width: 100%
+
+  form
+    max-width: 350px
+    margin: auto
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
+    flex-direction: column
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+    -ms-flex-pack: distribute
+    justify-content: space-around
+    gap: 30px
+    padding: 50px 0px
+
+    .cont-91
+      border-left: 5px solid #ff8800
+
+      .field
+        font-size: 35px
+        padding: 10px
+        background-color: #06203a
+        border: 1px solid #06203a
+        color: #fff
+
+        &::-webkit-input-placeholder, &:-ms-input-placeholder, &::-ms-input-placeholder, &::placeholder
+          color: #a7a1a1
+
+    .request_form_btn
+      text-align: center
+      padding: 50px
+
+      input
+        font-size: 30px
+        color: #fff
+        background-color: #ff8800
+        text-decoration: none
+        font-weight: bold
+        padding: 10px 30px
+        text-align: center
+        -webkit-transition: .3s
+        transition: .3s
+
+        &:hover
+          font-size: 30.5px
+          color: #ff8800
+          background-color: #fff
+          -webkit-transition: .2s
+          transition: .2s
+
+  p
+    font-size: 18px
+    color: #fff
+    font-weight: bold
+
+  a
+    font-size: 18px
+    text-decoration: none
+    color: #fff
+    -webkit-transition: .2s
+    transition: .2s
+
+    &:hover
+      font-size: 18.2px
+      color: #ff8800
+      -webkit-transition: .2s
+      transition: .2s
+
+.main_reg_field_licenser
+  text-align: justify
+
+  input
+    margin: 5px
+
+/*# sourceMappingURL=style.css.map
